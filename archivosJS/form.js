@@ -32,8 +32,8 @@ function validarFormulario(e) {
     icon: "success",
     html: `<span class="swal-title"> Hola ${nombre}, Gracias por comprar con nosotros. En breve nos contactaremos contigo al tel:${tel} y/o correo:${correo} para definir el modo de pago. Esperamos verte pronto..</span>`,
     background: "rgba(0, 0, 0, 0.265)",
-    showConfirmButton: false,
-    timer: 1500,
+    confirmButtonText: "ok",
+    // showConfirmButton: false,
   });
 }
 
