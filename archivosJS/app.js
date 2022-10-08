@@ -1,13 +1,15 @@
-async function fetchProductos() {
-  const response = await fetch('./data.json')
-  return await response.json()
-}
-let stock = [];
+let carrito = [];
 
-fetchProductos().then(productos => {
-  stock = productos
-  // mostrarCatalogo() 
-})
+// async function fetchProductos() {
+//   const response = await fetch('./data.json')
+//   return await response.json()
+// }
+// let stock = [];
+
+// fetchProductos().then(productos => {
+//   stock = productos
+//   mostrarCatalogo() 
+// })
 
 let tienda = document.querySelector("div#tienda");
 let lista = document.querySelector("div#listaStock");
