@@ -1,15 +1,15 @@
 let carrito = [];
 
-// async function fetchProductos() {
-//   const response = await fetch('./data.json')
-//   return await response.json()
-// }
-// let stock = [];
+async function fetchProductos() {
+  const response = await fetch('./archivosJS/data.json')
+  return await response.json()
+}
+let stock = [];
 
-// fetchProductos().then(productos => {
-//   stock = productos
-//   mostrarCatalogo() 
-// })
+fetchProductos().then(productos => {
+  stock = productos
+  mostrarCatalogo() 
+})
 
 let tienda = document.querySelector("div#tienda");
 let lista = document.querySelector("div#listaStock");
@@ -22,7 +22,7 @@ verCarrito.className = "ver-carrito";
 let modalContainer = document.querySelector("#modalContainer");
 
 
-// function mostrarCatalogo() {
+function mostrarCatalogo() {
 
 
 stock.forEach((elm) => {
@@ -75,4 +75,4 @@ stock.forEach((elm) => {
       const carrito1 = JSON.parse(localStorage.getItem("guardarCarrito"));
     });
 })
-// }
+}
